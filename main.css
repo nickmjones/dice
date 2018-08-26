@@ -1,0 +1,88 @@
+body {
+  font-family: 'Gill Sans', Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #efefef;
+}
+* {
+  box-sizing: border-box;
+}
+
+.overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90vh;
+  width: 100vw;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+.overlay .message {
+  height: 3rem;
+  background: white;
+  text-align: center;
+  line-height: 2.85rem;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px #d7d7d7;
+}
+.overlay.out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.labels {
+  display: flex;
+  padding: 2rem 0 0;
+}
+.labels aside {
+  flex: 2;
+  text-align: center;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.box {
+  display: flex;
+  height: 80vh;
+}
+
+.dice {
+  flex: 2;
+  font-size: 5rem;
+  list-style: none;
+  padding: 2rem;
+  margin: 0;
+}
+.dice li {
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+}
+.dice__defender li {
+  color: #ab3428;
+}
+
+.actions {
+  display: flex;
+  padding: 1rem;
+}
+
+button.rollButton {
+  width: 100vw;
+  background: #3b8ea5;
+  text-align: center;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  padding: 16px;
+  font-size: 1.25rem;
+  transition: all 0.05s ease-in-out;
+}
+button.rollButton:active {
+  transform: translateY(4px);
+}
+button.rollButton:focus {
+  outline: 0;
+}
